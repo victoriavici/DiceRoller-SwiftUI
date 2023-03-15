@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct DiceRollerApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: DiceRollerDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup {
+            ContentView()
         }
     }
 }

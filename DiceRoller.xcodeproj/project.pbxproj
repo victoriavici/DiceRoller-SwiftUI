@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		CA4F668429C071FF00CA281D /* DiceRollerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F668329C071FF00CA281D /* DiceRollerApp.swift */; };
-		CA4F668629C071FF00CA281D /* DiceRollerDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F668529C071FF00CA281D /* DiceRollerDocument.swift */; };
 		CA4F668829C071FF00CA281D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F668729C071FF00CA281D /* ContentView.swift */; };
 		CA4F668A29C0720100CA281D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4F668929C0720100CA281D /* Assets.xcassets */; };
 		CA4F668D29C0720100CA281D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA4F668C29C0720100CA281D /* Preview Assets.xcassets */; };
+		CA4F669529C0DD5C00CA281D /* DiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F669429C0DD5C00CA281D /* DiceView.swift */; };
+		CA4F669929C0E6BC00CA281D /* DiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4F669829C0E6BC00CA281D /* DiceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CA4F668029C071FF00CA281D /* DiceRoller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiceRoller.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA4F668329C071FF00CA281D /* DiceRollerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollerApp.swift; sourceTree = "<group>"; };
-		CA4F668529C071FF00CA281D /* DiceRollerDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceRollerDocument.swift; sourceTree = "<group>"; };
 		CA4F668729C071FF00CA281D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA4F668929C0720100CA281D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA4F668C29C0720100CA281D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA4F668E29C0720100CA281D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA4F669429C0DD5C00CA281D /* DiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceView.swift; sourceTree = "<group>"; };
+		CA4F669829C0E6BC00CA281D /* DiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				CA4F668329C071FF00CA281D /* DiceRollerApp.swift */,
-				CA4F668529C071FF00CA281D /* DiceRollerDocument.swift */,
 				CA4F668729C071FF00CA281D /* ContentView.swift */,
+				CA4F669429C0DD5C00CA281D /* DiceView.swift */,
+				CA4F669829C0E6BC00CA281D /* DiceViewModel.swift */,
 				CA4F668929C0720100CA281D /* Assets.xcassets */,
 				CA4F668E29C0720100CA281D /* Info.plist */,
 				CA4F668B29C0720100CA281D /* Preview Content */,
@@ -143,7 +146,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA4F668429C071FF00CA281D /* DiceRollerApp.swift in Sources */,
-				CA4F668629C071FF00CA281D /* DiceRollerDocument.swift in Sources */,
+				CA4F669929C0E6BC00CA281D /* DiceViewModel.swift in Sources */,
+				CA4F669529C0DD5C00CA281D /* DiceView.swift in Sources */,
 				CA4F668829C071FF00CA281D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -255,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +287,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,6 +319,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
